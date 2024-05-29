@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    border: 3px solid rgb(0, 0, 0);
+    width: 80%;
+    height: 700px;
+    margin: auto;
+}
+
+.item {
+    border: 3px solid crimson;
+    border-radius: 3px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    padding: 1em;
+}
+/* End Of Base Styles */
+
+.container {
+    display: flex;
+    flex-direction:row; /* we can change the flex direction to vertical by this */
+    justify-content:space-around; /* To align items on the main axis */
+    align-items:flex-start ;/*use for aligning items on the cross axis */
+    align-content: ;/*this only works when we have multiple lines of content*/
+    gap:; /*use it for adding gap between items*/ 
+}
+
+.item-2 {
+    flex-grow:1;
+    flex-shrink:5 ;
+}
+.item-1, .item-3 {
+    flex-shrink: 0;
+}
+.item-3 {
+    flex-basis:200px ; /*defines the size of an item before the remaining space is distributed */
+   /*This is actually like definig a width for a specific item.(Don't use this so frequently)*/
+   order:; /*Use this to change the order of items*/
+}
+.item-1, .item-3 {
+    align-self:center; /*align a specific item*/
+
+}
+
+/* We also have got row-gap and colloumn-gap there*/
