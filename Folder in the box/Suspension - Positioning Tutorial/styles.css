@@ -1,0 +1,35 @@
+body {
+    background-color: #1d1d1d;
+}
+.box {
+    position: relative;
+    left: 200px; 
+    /* considering differen values which come for position attribute,
+    1.The static attribute is just the same default setting.
+    2.The relative value gives the possibility of moving the
+    item based on its normal positioning.
+    3.The absolute value is gonna take your content and totally
+    rip it out of its place and completly place it somewhere else inside the viewport.
+    4.The fixed value is gonna make the item behave the same as the
+    absoloute value but also it's gonna make it fixed at the viewport so that when
+    you scroll the page, the item is gonna be visible and fixed. This is so suitable for the navbar fixing.
+    5.The sticky value: (didn't really understand it. search for it.) */
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    z-index: 10;
+
+
+}
+.container {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    z-index: -10;
+    /* if based on your positioning, the red and blud box
+    were overlapping by any chance, you can use z-index attribute 
+    to define which item to be shown on the top. 
+    In this case the box is going to be shown on the top and the 
+    container is going to be shown under the box if they overlap.*/
+
+}
